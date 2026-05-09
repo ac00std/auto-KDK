@@ -4,10 +4,17 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: sekigon-gonnoc
       url-base: https://github.com/sekigon-gonnoc
+    # ここにJIS配列用の住所を追加しました
+    - name: kot149
+      url-base: https://github.com/kot149
   projects:
     - name: zmk
       remote: zmkfirmware
       revision: v0.3
       import: app/west.yml
+    # ここにJIS配列用のツールを追加しました
+    - name: zmk-layout-shift
+      remote: kot149
+      revision: v1
   self:
     path: config
